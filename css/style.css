@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "Poppins", serif;
+    background-color: #000;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: "Tomorrow", serif;
+}
+.container{
+    max-width: 650px;
+}
+.score_board{
+    border-width: 1.5px !important;
+}
+.score_number{
+    font-size: 5.4rem;
+}
+.power-btn, .score-btn{
+    max-width: 85px;
+    max-height: 85px;
+}
+
+.play-btn, .stop-btn{
+    max-width: 100px;
+    max-height: 100px;
+}
+.btn{
+    border-radius: 35% !important;
+}
+@media only screen and (min-width: 1024px) and (max-height: 600px) and (orientation: landscape) {
+    .container{
+        width: 95%;
+        max-width: unset;
+        display: grid;
+        height: 100vh;
+        align-items: center;
+        grid-template-columns: 1fr .8fr;
+        gap: 40px;
+    }
+    .d-none.d-sm-block{
+        display: none !important;
+    }
+    .d-sm-none{
+        display: block !important;
+    }
+    .power-btn, .score-btn {
+        max-width: 65px;
+        max-height: 65px;
+    }
+    .play-btn, .stop-btn {
+        max-width: 80px;
+        max-height: 80px;
+    }
+    .main_control{
+        flex-direction: column !important;
+        padding-bottom: 0 !important;
+        justify-content: space-around;
+        height: 100%;
+    }
+    .main_control .col-6{
+        width: 100% !important;
+    }
+    .col-sm-8.d-flex{
+        flex: 0 0 auto;
+        width: 75%;
+    }
+    .col-sm-2{
+        flex: 0 0 auto;
+        width: 25%;
+    }
+    .row.flex-grow-1.pb-5{
+        padding-bottom: 0 !important;
+    }
+    .wrapper.flex-grow-1.d-flex.justify-content-center{
+        justify-content: space-between !important;
+        height: 100%;
+        align-items: center;
+        flex-direction: row !important;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    .power-btn, .score-btn {
+        max-width: 65px;
+        max-height: 65px;
+    }
+    .play-btn, .stop-btn {
+        max-width: 80px;
+        max-height: 80px;
+    }
+}
+@media only screen and (max-width: 390px){
+    .score_number {
+        font-size: 4rem;
+    }
+    .power-btn, .score-btn {
+        max-width: 60px;
+        max-height: 60px;
+    }
+    .play-btn, .stop-btn {
+        max-width: 70px;
+        max-height: 70px;
+    }
+}
+@media only screen and (max-height: 400px) and (orientation: landscape) {
+    .container{
+        width: 95%;
+        max-width: unset;
+        display: grid;
+        height: 100vh;
+        align-items: center;
+        grid-template-columns: 1fr .8fr;
+        gap: 40px;
+    }
+    .d-none.d-sm-block{
+        display: none !important;
+    }
+    .d-sm-none{
+        display: block !important;
+    }
+    .power-btn, .score-btn {
+        max-width: 65px;
+        max-height: 65px;
+    }
+    .play-btn, .stop-btn {
+        max-width: 80px;
+        max-height: 80px;
+    }
+    .main_control{
+        flex-direction: column !important;
+        padding-bottom: 0 !important;
+        justify-content: space-around;
+        height: 100%;
+    }
+    .main_control .col-6{
+        width: 100% !important;
+    }
+    .col-sm-8.d-flex{
+        flex: 0 0 auto;
+        width: 75%;
+    }
+    .col-sm-2{
+        flex: 0 0 auto;
+        width: 25%;
+    }
+    .row.flex-grow-1.pb-5{
+        padding-bottom: 0 !important;
+    }
+    .wrapper.flex-grow-1.d-flex.justify-content-center{
+        justify-content: space-between !important;
+        height: 100%;
+        align-items: center;
+        flex-direction: row !important;
+    }
+}

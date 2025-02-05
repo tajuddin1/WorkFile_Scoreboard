@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score board</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="text-center">
+        <div class="container px-3 py-5">
+            <div class="row flex-column-reverse gap-5 gap-sm-0 flex-sm-row flex-grow-1 pb-5">
+                <div class="col-sm-2 d-flex justify-content-sm-end">
+                    <div class="btn-group flex-sm-column gap-3 justify-content-around justify-content-sm-between flex-grow-1">
+                        <button class="btn power-btn btn-danger rounded-circle2 p-2 p-sm-3 ">
+                            <svg class="w-100 h-100" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="0.504">
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" stroke-width="0.048"/>
+                                <g id="SVGRepo_iconCarrier"> <path d="M8.7919 5.14712C9.17345 4.98591 9.35208 4.54591 9.19087 4.16435C9.02966 3.7828 8.58966 3.60417 8.2081 3.76538C4.70832 5.24406 2.25 8.70925 2.25 12.7503C2.25 18.1351 6.61522 22.5003 12 22.5003C17.3848 22.5003 21.75 18.1351 21.75 12.7503C21.75 8.70925 19.2917 5.24406 15.7919 3.76538C15.4103 3.60417 14.9703 3.7828 14.8091 4.16435C14.6479 4.54591 14.8265 4.98591 15.2081 5.14712C18.1722 6.39947 20.25 9.33312 20.25 12.7503C20.25 17.3067 16.5563 21.0003 12 21.0003C7.44365 21.0003 3.75 17.3067 3.75 12.7503C3.75 9.33312 5.82779 6.39947 8.7919 5.14712Z" fill="currentColor"/> <path d="M12.75 2.75C12.75 2.33579 12.4142 2 12 2C11.5858 2 11.25 2.33579 11.25 2.75V6.75C11.25 7.16421 11.5858 7.5 12 7.5C12.4142 7.5 12.75 7.16421 12.75 6.75V2.75Z" fill="currentColor"/> </g>
+                            </svg>
+                        </button>
+                        <button class="btn power-btn btn-primary text-white rounded-circle2 p-2 p-sm-3">
+                            <svg class="w-100 h-100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" stroke-width="0.528"/>
+                                <g id="SVGRepo_iconCarrier"> <path d="M3.5 13L3.29592 12.0476C2.62895 8.93509 5.00172 6 8.18494 6H19M19 6L16 9M19 6L16 3M20.5 11L20.7041 11.9524C21.3711 15.0649 18.9983 18 15.8151 18H5M5 18L8 15M5 18L8 21" stroke="currentColor" stroke-width="2.088" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                            </svg>
+                        </button>
+                        <button class="btn power-btn btn-warning text-white rounded-circle2 p-2 p-sm-3 d-sm-none">
+                            <svg class="w-100 h-100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                <g id="SVGRepo_iconCarrier"> <g id="style=linear"> <g id="setting"> <path id="vector" d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="1.8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/> <path id="vector_2" d="M2 12.88V11.12C2 10.08 2.85 9.22 3.9 9.22C5.71 9.22 6.45 7.94 5.54 6.37C5.02 5.47 5.33 4.3 6.24 3.78L7.97 2.79C8.76 2.32 9.78 2.6 10.25 3.39L10.36 3.58C11.26 5.15 12.74 5.15 13.65 3.58L13.76 3.39C14.23 2.6 15.25 2.32 16.04 2.79L17.77 3.78C18.68 4.3 18.99 5.47 18.47 6.37C17.56 7.94 18.3 9.22 20.11 9.22C21.15 9.22 22.01 10.07 22.01 11.12V12.88C22.01 13.92 21.16 14.78 20.11 14.78C18.3 14.78 17.56 16.06 18.47 17.63C18.99 18.54 18.68 19.7 17.77 20.22L16.04 21.21C15.25 21.68 14.23 21.4 13.76 20.61L13.65 20.42C12.75 18.85 11.27 18.85 10.36 20.42L10.25 20.61C9.78 21.4 8.76 21.68 7.97 21.21L6.24 20.22C5.33 19.7 5.02 18.53 5.54 17.63C6.45 16.06 5.71 14.78 3.9 14.78C2.85 14.78 2 13.92 2 12.88Z" stroke="currentColor" stroke-width="1.8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/> </g> </g> </g>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-8 d-flex">
+                    <div class="card score_board flex-grow-1 counter p-4 bg-warning-subtle border border-warning rounded-4 text-black justify-content-center">
+                        <div class="row mb-4">
+                            <div class="col-6 text-start border-end border-warning">
+                                <h1 class="score_number mb-0">2</h1>
+                            </div>
+                            <div class="col-6 text-end">
+                                <h1 class="score_number mb-0">2</h1>
+                            </div>
+                        </div>
+                        <h3 class="timer text-center mb-0 fw-normal">12:36</h3>
+                    </div>
+                </div>
+                <div class="col-sm-2 d-none d-sm-flex justify-content-sm-end mt-5 mt-sm-0">
+                    <button class="btn power-btn btn-warning text-white rounded-circle2 p-2 p-sm-3">
+                        <svg class="w-100 h-100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                            <g id="SVGRepo_iconCarrier"> <g id="style=linear"> <g id="setting"> <path id="vector" d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="1.8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/> <path id="vector_2" d="M2 12.88V11.12C2 10.08 2.85 9.22 3.9 9.22C5.71 9.22 6.45 7.94 5.54 6.37C5.02 5.47 5.33 4.3 6.24 3.78L7.97 2.79C8.76 2.32 9.78 2.6 10.25 3.39L10.36 3.58C11.26 5.15 12.74 5.15 13.65 3.58L13.76 3.39C14.23 2.6 15.25 2.32 16.04 2.79L17.77 3.78C18.68 4.3 18.99 5.47 18.47 6.37C17.56 7.94 18.3 9.22 20.11 9.22C21.15 9.22 22.01 10.07 22.01 11.12V12.88C22.01 13.92 21.16 14.78 20.11 14.78C18.3 14.78 17.56 16.06 18.47 17.63C18.99 18.54 18.68 19.7 17.77 20.22L16.04 21.21C15.25 21.68 14.23 21.4 13.76 20.61L13.65 20.42C12.75 18.85 11.27 18.85 10.36 20.42L10.25 20.61C9.78 21.4 8.76 21.68 7.97 21.21L6.24 20.22C5.33 19.7 5.02 18.53 5.54 17.63C6.45 16.06 5.71 14.78 3.9 14.78C2.85 14.78 2 13.92 2 12.88Z" stroke="currentColor" stroke-width="1.8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/> </g> </g> </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="wrapper flex-grow-1 d-flex flex-column justify-content-center">
+                <div class="main_control row pb-5">
+                    <div class="col-6 text-center">
+                        <button class="btn play-btn btn-success rounded-circle2 p-3 p-sm-4">
+                            <svg class="w-100 w-100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.4086 9.35258C23.5305 10.5065 23.5305 13.4935 21.4086 14.6474L8.59662 21.6145C6.53435 22.736 4 21.2763 4 18.9671L4 5.0329C4 2.72368 6.53435 1.26402 8.59661 2.38548L21.4086 9.35258Z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="col-6 text-center">
+                        <button class="btn stop-btn btn-danger rounded-circle2 p-3 p-sm-4">
+                            <svg class="w-100 h-100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 text-center">
+                        <h3 class="text-center fw-light mb-2 pb-1">Home</h3>
+                        <div class="btn-group gap-5 flex-column">
+                            <button class="btn score-btn btn-success rounded-circle2 p-2">
+                                <svg class="w-100 h-100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <g id="SVGRepo_iconCarrier"> <path d="M12 17.5L12 6.5M12 6.5L8 11.0882M12 6.5L16 11.0882" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                                </svg>
+                            </button>
+                            <button class="btn score-btn btn-danger rounded-circle2 p-2">
+                                <svg class="w-100 h-100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <g id="SVGRepo_iconCarrier"> <path d="M12 6.5L12 17.5M12 17.5L16 12.9118M12 17.5L8 12.9118" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6 text-center">
+                        <h3 class="text-center fw-light mb-2 pb-1">Guests</h3>
+                        <div class="btn-group gap-5 flex-column">
+                            <button class="btn score-btn btn-success rounded-circle2 p-2">
+                                <svg class="w-100 h-100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <g id="SVGRepo_iconCarrier"> <path d="M12 17.5L12 6.5M12 6.5L8 11.0882M12 6.5L16 11.0882" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                                </svg>
+                            </button>
+                            <button class="btn score-btn btn-danger rounded-circle2 p-2">
+                                <svg class="w-100 h-100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <g id="SVGRepo_iconCarrier"> <path d="M12 6.5L12 17.5M12 17.5L16 12.9118M12 17.5L8 12.9118" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
