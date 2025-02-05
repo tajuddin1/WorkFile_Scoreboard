@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
     <title>Score board</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -10,7 +11,7 @@
 <body>
     <section class="text-center">
         <div class="container px-3 pt-2 py-md-5">
-            <div class="row flex-column-reverse gap-3 gap-sm-0 flex-sm-row flex-grow-1 pb-4 pb-md-5">
+            <div class="row flex-column gap-3 gap-sm-0 flex-sm-row flex-grow-1 pt-2 pt-sm-0 pb-4 pb-md-5">
                 <div class="col-sm-2 d-flex justify-content-sm-end">
                     <div class="btn-group flex-sm-column gap-3 justify-content-around justify-content-sm-between flex-grow-1">
                         <button class="btn power-btn btn-danger rounded-circle2 p-2 p-sm-3 ">
@@ -57,15 +58,24 @@
             </div>
             <div class="wrapper flex-grow-1 d-flex flex-column justify-content-center">
                 <div class="main_control row pb-4 pb-md-5">
-                    <div class="col-6 text-center">
-                        <button class="btn play-btn btn-success rounded-circle2 p-3 p-sm-4">
+                    <div class="col-4 text-center">
+                        <button class="btn power-btn btn-success rounded-circle2 p-2 p-sm-4">
                             <svg class="w-100 w-100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M21.4086 9.35258C23.5305 10.5065 23.5305 13.4935 21.4086 14.6474L8.59662 21.6145C6.53435 22.736 4 21.2763 4 18.9671L4 5.0329C4 2.72368 6.53435 1.26402 8.59661 2.38548L21.4086 9.35258Z" fill="currentColor"/>
                             </svg>
                         </button>
                     </div>
-                    <div class="col-6 text-center">
-                        <button class="btn stop-btn btn-danger rounded-circle2 p-3 p-sm-4">
+                    <div class="col-4 text-center">
+                        <button class="btn power-btn bg-info text-white rounded-circle2 p-2 p-sm-4">
+                            <svg class="w-100 h-100" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="#currentColor" stroke-width="1.659">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                <g id="SVGRepo_iconCarrier"> <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="matrix(0 1 1 0 2.5 2.5)"> <path d="m3.98652376 1.07807068c-2.38377179 1.38514556-3.98652376 3.96636605-3.98652376 6.92192932 0 4.418278 3.581722 8 8 8s8-3.581722 8-8-3.581722-8-8-8"/> <path d="m4 1v4h-4" transform="matrix(1 0 0 -1 0 6)"/> </g> </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="col-4 text-center">
+                        <button class="btn power-btn btn-danger rounded-circle2 p-2 p-sm-4">
                             <svg class="w-100 h-100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12Z" fill="currentColor"/>
                             </svg>
@@ -73,16 +83,16 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6 text-center">
+                    <div class="col-6 score-btn-group home text-center">
                         <h3 class="text-center fw-light mb-2 pb-1">Home</h3>
                         <div class="btn-group gap-4 gap-md-5 flex-column">
-                            <button class="btn score-btn btn-success rounded-circle2 p-2">
+                            <button class="btn score-btn btn-primary rounded-circle2 p-2">
                                 <svg class="w-100 h-100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
                                     <g id="SVGRepo_iconCarrier"> <path d="M12 17.5L12 6.5M12 6.5L8 11.0882M12 6.5L16 11.0882" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/> </g>
                                 </svg>
                             </button>
-                            <button class="btn score-btn btn-danger rounded-circle2 p-2">
+                            <button class="btn score-btn btn-primary rounded-circle2 p-2">
                                 <svg class="w-100 h-100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
                                     <g id="SVGRepo_iconCarrier"> <path d="M12 6.5L12 17.5M12 17.5L16 12.9118M12 17.5L8 12.9118" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/> </g>
@@ -90,16 +100,16 @@
                             </button>
                         </div>
                     </div>
-                    <div class="col-6 text-center">
+                    <div class="col-6 score-btn-group guest text-center">
                         <h3 class="text-center fw-light mb-2 pb-1">Guests</h3>
                         <div class="btn-group gap-4 gap-md-5 flex-column">
-                            <button class="btn score-btn btn-success rounded-circle2 p-2">
+                            <button class="btn score-btn btn-primary rounded-circle2 p-2">
                                 <svg class="w-100 h-100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
                                     <g id="SVGRepo_iconCarrier"> <path d="M12 17.5L12 6.5M12 6.5L8 11.0882M12 6.5L16 11.0882" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/> </g>
                                 </svg>
                             </button>
-                            <button class="btn score-btn btn-danger rounded-circle2 p-2">
+                            <button class="btn score-btn btn-primary rounded-circle2 p-2">
                                 <svg class="w-100 h-100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
                                     <g id="SVGRepo_iconCarrier"> <path d="M12 6.5L12 17.5M12 17.5L16 12.9118M12 17.5L8 12.9118" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/> </g>
