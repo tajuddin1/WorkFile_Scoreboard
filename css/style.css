@@ -36,11 +36,18 @@ h1, h2, h3, h4, h5{
 }
 
 @media only screen and (min-width: 1024px) and (max-height: 600px) and (orientation: landscape) {
+    section{
+        width: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     .container{
         width: 95%;
         max-width: unset;
         display: grid;
-        height: 100vh;
+        /* height: 100vh; */
         align-items: center;
         grid-template-columns: 1fr;
         align-content: center;
@@ -146,11 +153,18 @@ h1, h2, h3, h4, h5{
     }
 }
 @media only screen and (max-height: 430px) and (orientation: landscape) {
+    section{
+        width: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     .container{
         width: 95%;
         max-width: unset;
         display: grid;
-        height: 100vh;
+        /* height: 100vh; */
         align-items: center;
         grid-template-columns: 1fr;
         align-content: center;
